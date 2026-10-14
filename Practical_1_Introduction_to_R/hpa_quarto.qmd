@@ -1,0 +1,24 @@
+---
+title: "Brain"
+author: "Alex Carson"
+---
+Calculate the total number of genes with regionally elevated expression in the forebrain: in human, mice and pigs
+
+Humans
+```{r}
+total_human <- sum(180 + 83 + 57 + 110)
+print(total_human)
+```
+
+Pigs
+```{r}
+total_pig <- sum(109 + 157 + 31 + 45)
+print(total_pig)
+```
+
+Mice
+```{r}
+total_mice <- sum(55 + 185 + 60 + 98)
+print(total_mice)
+```
+Humans have the most

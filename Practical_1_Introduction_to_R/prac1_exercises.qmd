@@ -1,0 +1,35 @@
+---
+title: "Practical_1_Introduction_to_R/prac1_exercises"
+author: "Alex Carson"
+---
+```{r}
+round(3.14159)
+round(3.14159, digits = 2)
+```
+```{r}
+print(seq(1, 10, 2))
+print(seq(1, 20, 3))
+```
+```{r}
+print(rep(5,7))
+```
+```{r}
+x <- 5
+print(x)
+a <- "hello"
+print(a)
+y <- TRUE
+print(y)
+print(class(y))
+```
+```{r}
+cell_ID_a <- "CX1"
+cell_ID_b <- "CX2"
+treated_a <- TRUE
+treated_b <- FALSE
+num_cells_before_a <- 5415
+num_cells_before_b <- 8123
+num_cells_after_a <- 1432
+num_cells_after_b <- 7543
+```
+
