@@ -3,6 +3,11 @@ title: "Practical_1_Introduction_to_R/prac1_exercises"
 author: "Alex Carson"
 ---
 ```{r}
+library(tidyverse)
+library(gt)
+```
+
+```{r}
 round(3.14159)
 round(3.14159, digits = 2)
 ```
@@ -31,5 +36,29 @@ num_cells_before_a <- 5415
 num_cells_before_b <- 8123
 num_cells_after_a <- 1432
 num_cells_after_b <- 7543
+```
+```{r}
+cell_id_vec <- c(cell_ID_a, cell_ID_b )
+treated_vec <- c(treated_a, treated_b)
+num_cells_before_vec <- c(num_cells_before_a, num_cells_before_b)
+num_cells_after_vec <- c(num_cells_after_a, num_cells_after_b)
+
+```
+```{r}
+all_my_pets <- c("dog", "horse", "guinea pig", "chicken", "cat")
+my_chicken <- all_my_pets[4]
+                        
+print(my_chicken)
+```
+
+```{r}
+my_data_frame <- tibble (
+  cell_ID = cell_id_vec,
+  treated = treated_vec,
+  Num_cells_before = num_cells_before_vec,
+  Num_cells_after = num_cells_after_vec
+  
+)
+gt(my_data_frame)
 ```
 
